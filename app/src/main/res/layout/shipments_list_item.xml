@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/shipments_list_item_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:padding="8dp"
+    android:background="@android:color/background_light" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <TextView
+            android:id="@+id/shipments_list_item_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:text="status" />
+        <TextView
+            android:id="@+id/shipments_list_item_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="right"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:text="id" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <android.support.percent.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/primary_text_light"
+                android:id="@+id/shipments_list_item_from_label"
+                app:layout_widthPercent="20%"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:text="From" />
+            <TextView
+                android:textColor="@android:color/primary_text_light"
+                android:id="@+id/shipments_list_item_from_address"
+                app:layout_widthPercent="40%"
+                app:layout_marginLeftPercent="20%"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:text="" />
+            <TextView
+                android:textColor="@android:color/primary_text_light"
+                android:id="@+id/shipments_list_item_from_date"
+                app:layout_widthPercent="40%"
+                app:layout_marginLeftPercent="60%"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:layout_gravity="right"
+                android:text="" />
+        </android.support.percent.PercentFrameLayout>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <android.support.percent.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/primary_text_light"
+                android:id="@+id/shipments_list_item_to_label"
+                app:layout_widthPercent="20%"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:text="To" />
+            <TextView
+                android:textColor="@android:color/primary_text_light"
+                android:id="@+id/shipments_list_item_to_address"
+                app:layout_widthPercent="40%"
+                app:layout_marginLeftPercent="20%"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:text="" />
+            <TextView
+                android:textColor="@android:color/primary_text_light"
+                android:id="@+id/shipments_list_item_to_date"
+                app:layout_widthPercent="40%"
+                app:layout_marginLeftPercent="60%"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:layout_gravity="right"
+                android:text="" />
+        </android.support.percent.PercentFrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

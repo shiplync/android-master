@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp">
+    <android.support.percent.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/primary_text_light"
+            android:id="@+id/shipment_field_item_label"
+            app:layout_widthPercent="40%"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:text="Label"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:textColor="@android:color/primary_text_light"
+            android:id="@+id/shipment_field_item_value"
+            app:layout_widthPercent="60%"
+            app:layout_marginLeftPercent="40%"
+            android:layout_height="wrap_content"
+
+            android:textSize="12sp"
+            android:text="Value" />
+    </android.support.percent.PercentFrameLayout>
+</LinearLayout>
